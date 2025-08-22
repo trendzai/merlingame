@@ -1,3 +1,14 @@
 {
-  "outputDirectory": "build"
+  "outputDirectory": "build",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-ancestors 'self' https://trendz-ai.com http://localhost:3005;"
+        }
+      ]
+    }
+  ]
 }
